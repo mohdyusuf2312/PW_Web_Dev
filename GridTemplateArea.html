@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "a a a"
+            "b . ."
+            "b c c";
+            /* grid-template-rows: repeat(3, 200px);
+            grid-template-columns: repeat(3, 200px); */
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px;
+            border: 2px solid;
+            gap: 20px;
+        }
+
+        .box1{
+            background-color:aqua ;
+            grid-area: a;
+        }
+        .box2{
+            grid-area: b;
+            background-color:aquamarine;
+        }
+        .box3{
+            grid-area: c;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- Grid Template Area -->
+     <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+     </div>
+</body>
+</html>
