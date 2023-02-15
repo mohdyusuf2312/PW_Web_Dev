@@ -8,3 +8,10 @@ body{
     background-image: url(/HTML/project3/assets/pexels-maxyne-barcel-10402282\ 1.png);
     background-attachment: fixed;
 }
+
+header{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
