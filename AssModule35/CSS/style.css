@@ -10,3 +10,97 @@ body{
 .hide{
     display: none;
 }
+footer{
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin: 8px 10px;
+}
+footer>:first-child{
+    border-radius: 20%;
+    background-color: #2e9de8;
+    padding: 2px 5px;
+}
+.top{
+    margin-left: 350px;
+    max-width: 70%;
+    height: 200px;
+    display: flex;
+}
+.left{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ps{
+    height: auto;
+    width: 35%;
+}
+h3{
+    font-size: 18px;
+    margin-left: 40px;
+}
+.left>h1{
+    font-size: 27px;
+    margin-left: 40px;
+}
+p{
+    color: rgb(172, 167, 59);
+    font-weight: 600;
+    margin-left: 40px;
+}
+.hand{
+    height: 15px;
+    width: 15px;
+}
+
+/* center  */
+.h{
+    color: white;
+    text-decoration: 3px underline blue;
+    text-align: center;
+}
+.center{
+    max-width: 60%;
+    margin-left: 220px;
+}
+.center>h1{
+    font-weight: 600;
+    margin-top: 70px;
+}
+.i{
+    height: 220px;
+    width: 220px;
+}
+.ip{
+    color: white;
+    margin-left: 70px;
+}
+.images{
+    margin-left: 200px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* bottom */
+
+.bottom{
+    max-width: 60%;
+    margin-left: 220px;
+    margin-top: 40px;
+}
+.c{
+    height: auto;
+    width: 20px;
+    margin: 10px;
+}
+.git{
+    display: flex;
+    justify-content: center;
+}
