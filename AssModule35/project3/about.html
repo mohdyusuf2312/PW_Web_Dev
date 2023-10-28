@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+
+    <!-- adding the google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* css reset */
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+        font-family: "IBM Plex Sans", sans-serif;
+      }
+
+      body {
+        max-width: 1440px;
+        background-color: #f0f4f5;
+        overflow: hidden;
+        margin: auto;
+      }
+
+      /* designing the navigation menu */
+      nav {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+      }
+
+      /* designing the logo */
+      nav img {
+        width: 150px;
+      }
+
+      /* desiging the navigation menu links */
+      nav ul {
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin-right: 50px;
+        font-weight: 600;
+      }
+
+      nav ul li:first-child {
+        font-weight: 700;
+        color: #20bc7e;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      /* designing the main section */
+      main {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5%;
+      }
+
+      .hospitalDescription {
+        width: 50%;
+        text-align: center;
+      }
+
+      .hospitalDescription h1 {
+        margin-bottom: 20px;
+        color: #20BC7E;
+      }
+
+      .hospitalDescription p {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      /* desinging the achievement card */
+      .achievement {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+      }
+
+      .achievementCard {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .achievementCard span {
+        font-size: 25px;
+        font-weight: 700;
+        color: #20BC7E;
+      }
+
+      .achievementCard p {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- creating the navigation menu -->
+    <nav>
+      <img src="assets/logo.png" alt="logo" />
+      <a href="/"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <!-- creating the main section -->
+    <main>
+      <!-- adding the hospital details -->
+      <div class="hospitalDescription">
+        <h1>Best and Experienced Faculties</h1>
+        <p>
+          We had bring the best experts of medical field to provide you the best
+          service as possible. We are trying our best to serve the world with
+          our facilities, so that everyone can have a proper medical facility to
+          avail.
+        </p>
+      </div>
+
+      <!-- adding the achievement cards -->
+      <div class="achievement">
+        <div class="achievementCard">
+          <span>20+</span>
+          <p>Doctors</p>
+        </div>
+
+        <div class="achievementCard">
+          <span>50,000+</span>
+          <p>Customers</p>
+        </div>
+
+        <div class="achievementCard">
+          <span>500+</span>
+          <p>Students</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
