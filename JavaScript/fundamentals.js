@@ -28,3 +28,5 @@ console.log(highScore === myHighScore);
 // It will print false because its time javascript checks datatypes AudioScheduledSourceNode.
 
 console.log(10+5+"5"); //10+5=15   // 15"5" => 155
+
+console.log(15/0);    //  This will print infinity
