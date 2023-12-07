@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+
+    <!-- adding the google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+          /* css reset */
+      * {
+          margin: 0;
+          padding: 0;
+          outline: 0;
+          box-sizing: border-box;
+          font-family: "IBM Plex Sans", sans-serif;
+        }
+        
+        body {
+          max-width: 1440px;
+          background-color: #f0f4f5;
+          overflow: hidden;
+          margin: auto;
+        }
+        
+        /* designing the navigation menu */
+        nav {
+          height: 15vh;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 5%;
+        }
+        
+        /* designing the logo */
+        nav img {
+          width: 150px;
+        }
+        
+        /* desiging the navigation menu links */
+        nav ul {
+          display: flex;
+          align-items: center;
+        }
+        
+        nav ul li {
+          list-style: none;
+          margin-right: 50px;
+          font-weight: 600;
+        }
+        
+        nav ul li:first-child {
+          font-weight: 700;
+          color: #20bc7e;
+        }
+        
+        a {
+          text-decoration: none;
+          color: black;
+        }
+
+        /* designing the main section and form */
+        main{
+          height: 85vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        form{
+          width: 350px;
+          box-shadow: 0 0 10px black;
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        form h1{
+          text-align: center;
+        }
+
+        form div{
+          display: flex;
+          flex-direction: column;
+        }
+
+        form div label{
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        form div input{
+          border: transparent;
+          border-radius: 10px;
+          padding: 5px 10px;
+        }
+
+        form div textarea{
+          resize: none;
+          height: 100px;
+          border: transparent;
+          border-radius: 10px;
+          padding: 5px 10px;
+        }
+
+        form button{
+          border: transparent;
+          border-radius: 10px;
+          background: #20BC7E;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          padding: 10px;
+          cursor: pointer;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- creating the navigation menu -->
+    <nav>
+        <img src="assets/logo.png" alt="logo" />
+        <a href="/"></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <!-- creating the main section -->
+      <main>
+        <!-- creating the contact form -->
+        <form>
+          <h1>Contact Form</h1>
+
+          <div>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+          </div>
+
+          <div>
+            <label>Email</label>
+            <input type="text" placeholder="Enter your email">
+          </div>
+
+          <div>
+            <label>Message</label>
+            <textarea placeholder="Enter your message"></textarea>
+          </div>
+
+          <button>Submit</button>
+        </form>
+      </main>
+  </body>
+</html>
