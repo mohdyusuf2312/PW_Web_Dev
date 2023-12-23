@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Image with Arrow Keys</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #movableImage {
+            position: absolute;
+            width: 100px; /* Adjust as needed */
+            height: 100px; /* Adjust as needed */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="movableImage" src="/My_GitHub/PW_Web_Dev/project1/assets/avtar.png" alt="Movable Image">
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const image = document.getElementById('movableImage');
+            const container = document.getElementById('container');
+            
+            // Initial position
+            let posX = 0;
+            let posY = 0;
+            
+            // Movement step size
+            const step = 10; // Adjust this value to change the movement speed
+            
+            document.addEventListener('keydown', function(event) {
+                switch (event.key) {
+                    case 'ArrowUp':
+                        posY -= step;
+                        break;
+                    case 'ArrowDown':
+                        posY += step;
+                        break;
+                    case 'ArrowLeft':
+                        posX -= step;
+                        break;
+                    case 'ArrowRight':
+                        posX += step;
+                        break;
+                }
+                
+                // Update image position
+                image.style.left = `${posX}px`;
+                image.style.top = `${posY}px`;
+                
+                // Optional: Prevent image from moving outside the container
+                const containerRect = container.getBoundingClientRect();
+                const imageRect = image.getBoundingClientRect();
+                
+                if (imageRect.left < containerRect.left) posX = 0;
+                if (imageRect.right > containerRect.right) posX = containerRect.width - imageRect.width;
+                if (imageRect.top < containerRect.top) posY = 0;
+                if (imageRect.bottom > containerRect.bottom) posY = containerRect.height - imageRect.height;
+            });
+        });
+    </script>
+</body>
+</html>
