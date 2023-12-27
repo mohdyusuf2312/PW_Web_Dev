@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h2 {
+            color: #333;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple To-Do App</h2>
+    <input type="text" id="todoInput" placeholder="Add a new to-do...">
+    <button id="addButton">Add</button>
+    <ul id="todoList"></ul>
+
+    <script>
+        document.getElementById('addButton').addEventListener('click', function() {
+            const todoInput = document.getElementById('todoInput');
+            const todoText = todoInput.value.trim();
+
+            if (todoText !== '') {
+                addTodoItem(todoText);
+                todoInput.value = ''; // Clear the input field
+            }
+        });
+
+        function addTodoItem(text) {
+            const todoList = document.getElementById('todoList');
+            const li = document.createElement('li');
+            li.textContent = text;
+            todoList.appendChild(li);
+        }
+    </script>
+</body>
+</html>
