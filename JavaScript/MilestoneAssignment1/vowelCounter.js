@@ -1,6 +1,6 @@
-function checkCaps(name){
-    if(name[0] === name[0].toUpperCase()) return name;
-    else return name[0].toUpperCase() + name.slice(1);
+let name = "yusuf";
+let count = 0;
+for (let i = 0; i < name.length; i++){
+    if(name[i] === 'a' || name[i] === 'e' || name[i] === 'i' || name[i] === 'o' || name[i] === 'u' || name[i] === 'A' || name[i] === 'E' || name[i] === 'I' || name[i] === 'O' || name[i] === 'U') count++;
 }
-
-console.log(checkCaps("yusuf"));
+console.log(count);
