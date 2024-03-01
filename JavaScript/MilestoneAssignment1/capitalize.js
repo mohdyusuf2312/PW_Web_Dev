@@ -1,7 +1,13 @@
-let name = "yusuf";
-let count = 0;
-for (let i = 0; i < name.length; i++){
-    if(name[i] === 'a' || name[i] === 'e' || name[i] === 'i' || name[i] === 'o' || name[i] === 'u' || name[i] === 'A' || name[i] === 'E' || name[i] === 'I' || name[i] === 'O' || name[i] === 'U') count++;
-}
-console.log(count);
+// Method 1
 
+function checkCaps(name){
+    if(name[0] === name[0].toUpperCase()) return name;
+    else return name[0].toUpperCase() + name.slice(1);
+}
+
+console.log(checkCaps("yusuf"));
+
+// Method 2
+
+let arr = ["yusuf", "arshad", "kamil", "Shan"];
+arr.map((ele) => {console.log(ele[0].toUpperCase() + ele.slice(1))});
