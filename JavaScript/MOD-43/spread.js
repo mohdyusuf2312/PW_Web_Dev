@@ -4,3 +4,6 @@ const twoArray = [5,6,7,8];
 // const threeArray = oneArray.concat(twoArray);
 const threeArray = [...oneArray, ...twoArray];
 console.log(threeArray);
+
+const sitename = "pwskills";
+console.log(...sitename);
