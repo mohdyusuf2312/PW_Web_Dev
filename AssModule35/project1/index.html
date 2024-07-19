@@ -19,11 +19,11 @@
     <nav>
         <img class ="logo" src="assets/Photos/beatsLogo.png" alt="beatsLogo">
         <div class="rightnav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Specs</a></li>
-                <li><a href="#">Case</a></li>
-                <li><a href="#">Products</a></li>
+            <ul class="leftrightDiv">
+                <li class="gap"><a href="#">Home</a></li>
+                <li class="gap"><a href="#">Specs</a></li>
+                <li class="gap"><a href="#">Case</a></li>
+                <li class="gap"><a href="#">Products</a></li>
             </ul>
             <button>Shop</button>
         </div>
@@ -33,10 +33,12 @@
     <section class="sec1">
         <img class="main" src="assets/Photos/mainImage.png" alt="mainImage">
         <div class="sec1right">
-            <img class="onEarImage" src="assets/Photos/onEar.png" alt="onEarImage">
+            <div id="onEar">
+                <img class="onEarImage" src="assets/Photos/onEar.png" alt="onEarImage">
+            </div>
             <h1>Beats 3</h1>
             <h4>Overview</h4>
-            <p>
+            <p class="gray">
                 Enjoy award-winning Beats sound with wireless listening freedom and a
                 sleek, streamlined design with comfortable padded earphones,
                 delivering first-rate playback.
@@ -50,7 +52,7 @@
     </section>
     
     <!-- section 2 - socials  -->
-    <section>
+    <section class="soci">
         <ul class="leftrightDiv">
             <li><img class="socials" src="assets/Photos/appleLogo.png" alt="appleLogo"></li>
             <li><img class="socials" src="assets/Photos/spotifyLogo.png" alt="spotifyLogo"></li>
@@ -63,28 +65,28 @@
     <section class="sec3">
         <img src="assets/Icons/specsLogo.png" alt="specsLogo" class="seclogo">
         <div class="leftrightDiv">
-            <div class="verticlediv">
+            <div class=" spec verticlediv">
                 <div class="itemspecification">
-                    <img src="assets/Icons/bluetooth.png" alt="bluetooth" />
-                    <p>Connection</p>
+                    <img class="bblm" src="assets/Icons/bluetooth.png" alt="bluetooth" />
+                    <p><strong>Connection</strong></p>
                     <p>Bluetooth v5.2</p>
                   </div>
         
-                  <div class="itemspecification">
-                    <img src="assets/Icons/battery.png" alt="battery" />
-                    <p>Battery</p>
+                  <div>
+                    <img class="bblm" src="assets/Icons/battery.png" alt="battery" />
+                    <p><strong>Battery</strong></p>
                     <p>Duration 40h</p>
                   </div>
         
-                  <div class="itemspecification">
-                    <img src="assets/Icons/charger.png" alt="charger" />
-                    <p>Load</p>
+                  <div>
+                    <img class="bblm" src="assets/Icons/charger.png" alt="charger" />
+                    <p><strong>Load</strong></p>
                     <p>Fast Charge 4.2-AAC</p>
                   </div>
         
                   <div class="itemspecification">
-                    <img src="assets/Icons/mic.png" alt="mic" />
-                    <p>Microphone</p>
+                    <img class="bblm" src="assets/Icons/mic.png" alt="mic" />
+                    <p><strong>Microphone</strong></p>
                     <p>Supports Apple Siri and Google</p>
                   </div>
             </div>
