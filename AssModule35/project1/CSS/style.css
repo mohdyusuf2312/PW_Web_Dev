@@ -23,12 +23,18 @@ body{
     column-gap: 5vw;
 }
 
+h3{
+    justify-self: center;
+    align-self: center;
+}
+
 li{
     /* text-decoration: none; */
     list-style: none;
     font-weight: 600;
 }
 a{
+    text-decoration: none;
     color: white;
 }
 .card{
@@ -172,6 +178,35 @@ button{
     align-items: center;
 }
 
+/* footer */
+footer{
+    max-width: 70vw;
+    margin-top: 10%;
+}
+.flogo{
+    margin-top: 1.1vw;
+}
+input{
+    background-color: transparent;
+    /* order: 2; */
+}
+.subscribe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background: #161414;
+    border-radius: 5%;
+    padding: 2% 4%;
+    border: none;
+    cursor: pointer;
+    gap: 4%;
+    order: 3;
+}
+.id{
+    margin-top: 5%;
+}
+
 /* img size */
 
 .onEarImage{
@@ -209,4 +244,7 @@ button{
 }
 .btnimg{
     width: 1vw;
+}
+.rightarrow{
+    width: 1.5vw;
 }
