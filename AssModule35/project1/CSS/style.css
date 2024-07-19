@@ -1,5 +1,7 @@
+/* Global */
+
 body{
-    margin: 0;
+    margin: 0 15%;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -7,4 +9,130 @@ body{
     font-style: italic;
     background-color: black;
     color: white;
+}
+
+.verticlediv{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftrightDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 5vw;
+}
+
+li{
+    /* text-decoration: none; */
+    list-style: none;
+    font-weight: 600;
+}
+a{
+    color: white;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+    height: 6vh;
+    background-color: #444040;
+    color: white;
+    border-radius: 7%;
+    cursor: pointer;
+}
+.sec3, .sec4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+/* nav bar  */
+nav>img{
+    position: absolute;
+    top: 6%;
+}
+
+.rightnav{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5vw;
+}
+button{
+    background-color: #444040;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10%;
+}
+
+/* section 1 */
+.sec1right{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 22vh;
+    left: 40vw;
+}
+.sec1right>h1{
+    font-size: 42px;
+}
+.sec1right>h4{
+    font-size: 20px;
+}
+#onEar{
+    margin-left: 4vw;
+}
+.sec1right>p{
+    color: #808080;
+}
+
+/* section 2 - Social */
+.soci{
+    margin-top: 27%;
+}
+
+/* section 3 */
+.spec{
+    width: 15vw;
+}
+.itemspecification{
+    margin-left: 4vw;
+}
+
+/* img size */
+
+.onEarImage{
+    width: 25vw;
+}
+.logo{
+    width: 3%;
+}
+.main{
+    width: 21%;
+    position: absolute;
+    top: -20%;
+    margin-left: 6%;
+}
+.socials{
+    width: 7vw;
+}
+.seclogo{
+    margin-top: 2%;
+    width: 15vw;
+    margin-bottom: 8%;
+}
+.bblm{
+    width: 1vw;
+}
+.sec3rightimg, .sec4leftimg, sec5rightimg{
+    width: 22vw;
 }
