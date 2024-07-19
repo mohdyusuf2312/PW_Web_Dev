@@ -36,14 +36,14 @@ a{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 20vw;
+    width: 15vw;
     height: 6vh;
-    background-color: #444040;
+    background-color: #161414;
     color: white;
     border-radius: 7%;
     cursor: pointer;
 }
-.sec3, .sec4{
+.sec3, .sec4, .sec6{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,6 +108,70 @@ button{
     margin-left: 4vw;
 }
 
+/* section 4 */
+.case{
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section 5 */
+.sec5card{
+    width: 100%;
+    height: 55vh;
+    margin: 15% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #161414;
+    color: white;
+    border-radius: 2%;
+}
+.buy{
+    width: 20vw;
+}
+.blackb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 10vw;
+    height: 5vh;
+    background-color: black;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+/* section 6 */
+.cards{
+    height: 18vw;
+    width: 14vw;
+    background-image: linear-gradient(black 0%, black 30%, #161414 30%, #161414 100%) ;
+    margin: 6% 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+.bt{
+    width: 1.1vw;
+    background-color: black;
+}
+.btx{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    width: 34vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 /* img size */
 
 .onEarImage{
@@ -133,6 +197,16 @@ button{
 .bblm{
     width: 1vw;
 }
-.sec3rightimg, .sec4leftimg, sec5rightimg{
+.sec3rightimg, .sec4leftimg{
     width: 22vw;
+    margin-top: 5%;
+}
+.sec5rightimg{
+    width: 30vw;
+}
+.carditem{
+    width: 10vw;
+}
+.btnimg{
+    width: 1vw;
 }
