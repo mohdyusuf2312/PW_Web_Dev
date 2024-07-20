@@ -29,3 +29,14 @@ for(let i in a) {       // The value of this i is start from zero and goes last 
         console.log(a[i]);
     }
 }
+
+console.log("--------------------------");
+
+// another method of for each loop
+
+var sum=0;
+
+var arr = [10,15,20,30];  
+
+arr.forEach(function myFunction(element){sum= sum+element;});       //that is javascript function is called citizen first functions.
+console.log(sum);
