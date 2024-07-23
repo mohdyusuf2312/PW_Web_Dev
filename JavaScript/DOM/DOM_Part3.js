@@ -10,8 +10,8 @@ function open(){
 
     let b = document.createElement("button");
     b.setAttribute("class", "button");
-    // b.setAttribute("ondblclick", "hey()");             // wrong way
-    b.ondblclick = hey;                                 // right way
+    // b.setAttribute("onclick", "hey()");             // wrong way
+    b.onclick = hey;                                 // right way
     b.textContent = "Submit";
     b.style.padding = "5px 10px";
     b.style.color = "white";
@@ -31,5 +31,5 @@ function hey(){
     j.style.border = "3px solid black";
 }
 
-document.addEventListener("click",open);    // first attribute is Object that is inbuit event like click, dbclick, mouseenter,etc
+document.addEventListener("dblclick",open);    // first attribute is Object that is inbuit event like click, dbclick, mouseenter,etc
 // document.addEventListener("dblclick", hey);
