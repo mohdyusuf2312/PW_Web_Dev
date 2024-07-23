@@ -35,3 +35,16 @@ console.log(q2);
 
 let q3 = document.querySelector("#id");
 console.log(q3);
+
+// you can update class name, classList, id, style, and set attributes
+q.className = "hell";
+console.log(q);
+
+q1[0].classList = "x, y, z";
+console.log(q1[0]);
+
+q2.id = "hattt";
+console.log(q2);
+
+q3.setAttribute ("title", "Kya haal hai?");
+console.log(q3);
