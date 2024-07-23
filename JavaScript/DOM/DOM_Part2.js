@@ -22,4 +22,10 @@ console.log(ul);
 let y = document.querySelectorAll(".l");        // then select child element 
 console.log(y[1]);
 
-ul.removeChild(y[1]);                           // then delete child from parent
+// ul.removeChild(y[1]);                           // then delete child from parent
+
+// now if you want to delete all the elements then you can create loop for the same 
+
+for(a of y){
+    ul.removeChild(a);              // this will remove all the elements that are in the ul tag and have class = "l"
+}
