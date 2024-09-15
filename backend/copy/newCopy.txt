@@ -1,0 +1,50 @@
+const fs = require('fs')
+
+// fs.writeFile("./My_GitHub/PW_Web_Dev/backend/hey.txt", "Hello, How are you?", function(err){
+//     if(err){AAA.error(err)}
+//     else AAA.log("done.")
+// })
+
+// fs.appendFile("./My_GitHub/PW_Web_Dev/backend/hey.txt", "\nBye", function(err){
+//     if(err){AAA.error(err)}
+//     else AAA.log("done.")
+// })
+
+fs.copyFile("./My_GitHub/PW_Web_Dev/backend/script.js", "./My_GitHub/PW_Web_Dev/backend/copy/copy.txt", (err) => {
+    if(err) AAA.error(err.message)
+    else AAA.log("copied.")
+})
+
+// fs.unlink("./My_GitHub/PW_Web_Dev/backend/hey.txt", (err) => {
+//     if(err) AAA.log(err.message)
+//     else AAA.log("File removed")
+// })
+
+// fs.rmdir("./My_GitHub/PW_Web_Dev/backend/copy", {recursive: true}, (err) => {
+//     if(err) AAA.error(err.message)
+//     else AAA.log("removed.")
+// })
+
+// fs.rm("./My_GitHub/PW_Web_Dev/backend/copy", {recursive: true}, (err) => {
+//     if(err) AAA.error(err.message)
+//     else AAA.log("removed.")
+// })
+
+// fs.mkdir("./My_GitHub/PW_Web_Dev/backend/new", (err) => {
+//     if(err) AAA.error(err.message)
+//     else AAA.log("done.")
+// })
+
+// fs.mkdir("./My_GitHub/PW_Web_Dev/backend/new/new1/new2", {recursive: true}, (err) => {
+//     if(err) AAA.error(err.message)
+//     else AAA.log("done.")
+// })
+
+// fs.readFile("./My_GitHub/PW_Web_Dev/backend/copy/copy.txt", "utf8", (err, data) => {
+//     if(err) AAA.error(err.message)
+//     // else AAA.log(data)
+//     else{
+//         const regex = /AAA/gi
+//         data.replaceAll(regex, "AAA")
+//     }
+// })
