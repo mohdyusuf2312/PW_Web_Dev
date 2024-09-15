@@ -29,3 +29,22 @@ fs.copyFile("./My_GitHub/PW_Web_Dev/backend/script.js", "./My_GitHub/PW_Web_Dev/
 //     if(err) console.error(err.message)
 //     else console.log("removed.")
 // })
+
+// fs.mkdir("./My_GitHub/PW_Web_Dev/backend/new", (err) => {
+//     if(err) console.error(err.message)
+//     else console.log("done.")
+// })
+
+// fs.mkdir("./My_GitHub/PW_Web_Dev/backend/new/new1/new2", {recursive: true}, (err) => {
+//     if(err) console.error(err.message)
+//     else console.log("done.")
+// })
+
+// fs.readFile("./My_GitHub/PW_Web_Dev/backend/copy/copy.txt", "utf8", (err, data) => {
+//     if(err) console.error(err.message)
+//     // else console.log(data)
+//     else{
+//         const regex = /console/gi
+//         data.replaceAll(regex, "AAA")
+//     }
+// })
