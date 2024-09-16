@@ -25,7 +25,30 @@ const fs = require('fs')
 //     else console.log("removed.")
 // })
 
-fs.rm("./My_GitHub/PW_Web_Dev/backend/copy", {recursive: true}, (err) => {
+// fs.rm("./My_GitHub/PW_Web_Dev/backend/copy", {recursive: true}, (err) => {
+//     if(err) console.error(err.message)
+//     else console.log("removed.")
+// })
+
+// fs.mkdir("./My_GitHub/PW_Web_Dev/backend/new", (err) => {
+//     if(err) console.error(err.message)
+//     else console.log("done.")
+// })
+
+// fs.mkdir("./My_GitHub/PW_Web_Dev/backend/new/new1/new2", {recursive: true}, (err) => {
+//     if(err) console.error(err.message)
+//     else console.log("done.")
+// })
+
+fs.readFile("./My_GitHub/PW_Web_Dev/backend/copy/copy.txt", "utf8", (err, data) => {
     if(err) console.error(err.message)
-    else console.log("removed.")
+    // else console.log(data)
+    else{
+        const regex = /console/gi
+        const updatedData = data.replaceAll(regex, "AAA")
+        fs.writeFile("./My_GitHub/PW_Web_Dev/backend/copy/newCopy.txt", updatedData, (err) => {
+            if(err) console.error(err.message)
+            else console.log("NewCopy done.")
+        })
+    }
 })
